@@ -1,3 +1,191 @@
-﻿body
-{
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: inherit;
+}
+
+body {
+    color: g;
+    max-width: 2440px;
+    max-height: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img{
+   
+   
+}
+
+
+
+/*Header*/
+
+.header {
+  overflow: hidden;
+  padding: 20px 24px;
+  height:64px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header a {
+  float: left;
+  color: darkslategrey;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px; 
+  line-height: 40px;
+  border-radius: 4px;
+
+  
+
+}
+
+.header h1{
+ display:inline;
+ font-family: monospace;
+ font-size: 42px;
+ color:black;
+}
+.header img.logo {
+  font-size: 25px;
+  font-weight: bold;
+  vertical-align: middle;
+  width:60px;
+
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+    }
+
+/*Banner*/
+
+.main {
+    display: flex;
+    background-color: cadetblue;
+    width:100%;
+}
+
+ .image img {
+    
+    padding: 32px 24px;
+    
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:40%;
+}
+
+
+.button {
+    background-color: dimgrey;
+    font-size: 25px;
+    color: white;
+    font-weight: 200;
+}
+
+.main-text h3{
+font-size: 50px;
+font-family:Broadway;
+}
+
+.main-text p {
+    font-size: 30px;
+    font-family: Broadway;
+    
+}
+
+.main-text a {
+    text-align: center;
+    padding: 8px 180px;
+    margin:16px 0;
+}
+
+
+
+
+/*Info*/
+.info {
+  display:flex;
+ 
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.info .image{
+    max-width:1100px;
+}
+
+.info-text p{
+    max-width: 850px;
+}
+
+.info-img {
+    padding:16px;
+}
+
+/*Clases*/
+.classes{
+    display:flex;
+    flex-wrap:wrap;
+    background-color:cadetblue;
+    justify-content:center;
+    padding:56px 64px;
+}
+
+.cl-block {
+    flex-basis: 30%;
+    margin: 16px;
+    background-color: white;
+ 
+}
+/*video*/
+
+video{
+    width:100%;
+}
+
+
+/*Footer*/
+
+footer{
+    border-top:solid;
+    margin-top:30px;
+    display:flex;
+    flex-direction:row;
 }
