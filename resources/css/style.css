@@ -6,9 +6,8 @@
 }
 
 body {
-    color: g;
-    max-width: 2440px;
-    max-height: inherit;
+    max-width:2440px ;
+    max-height inherit: ;
 }
 
 a {
@@ -88,94 +87,175 @@ img{
 
 /*Banner*/
 
-.main {
+.banner {
     display: flex;
     background-color: cadetblue;
-    width:100%;
-}
-
- .image img {
-    
     padding: 32px 24px;
-    
 }
 
-.main-text {
+.b-image{
+    width:60%;
+}
+
+.banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    width:40%;
+    width: 40%;
+    font-family: 'Fjalla One', sans-serif;
+    padding-left:24px;
+    
+}
+.banner-text span{
+    font-size:20px;
+    font-style:italic;
 }
 
 
+
+.banner-text h3 {
+    font-size: 50px;
+    padding: 8px 24px;
+}
+
+.banner-text p {
+    font-size: 30px;
+    font-family: monospace;
+    padding: 8px 24px;
+}
+
+.banner-text a {
+    text-align: center;
+    margin: 16px 160px;
+    border-radius: 10px;
+}
 .button {
     background-color: dimgrey;
     font-size: 25px;
     color: white;
     font-weight: 200;
+    transition: 0.5s;
+    padding: 8px 24px;
+}
+.button:hover{
+    font-size:40px;
 }
 
-.main-text h3{
-font-size: 50px;
-font-family:Broadway;
-}
 
-.main-text p {
-    font-size: 30px;
-    font-family: Broadway;
-    
-}
-
-.main-text a {
-    text-align: center;
-    padding: 8px 180px;
-    margin:16px 0;
-}
 
 
 
 
 /*Info*/
+figure {
+    display: flex; 
+    padding:16px;
+    outline-style:initial;
+    outline-color:lightgray;
+}
+figcaption {
+    width: 60%;
+    font-size:30px;
+    margin:60px;
+}
+figure img{
+    width:35%;
+    height:auto;
+}
+.fig-3{
+    background-color:cadetblue;
+}
+
 .info {
   display:flex;
- 
+  padding:16px 8px;
 }
 
-.info-container {
-    display: flex;
-    align-items: center;
+.info-right{
+    width:60%;
 }
-
+.info-left{
+    width:40%;
+}
 .info .image{
-    max-width:1100px;
+    padding:16px;
+}
+.info-text h3{
+  font-size: 50px;
+  padding:32px 0 12px 24px;
+}
+
+.info-text .quote{
+    padding: 16px 24px;
 }
 
 .info-text p{
-    max-width: 850px;
+    font-size:20px;
+    padding :16px 24px
 }
 
-.info-img {
-    padding:16px;
+
+    figure p {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+figure a{
+    font-size: 20px;
+    color:lightblue;
 }
+
 
 /*Clases*/
-.classes{
-    display:flex;
-    flex-wrap:wrap;
-    background-color:cadetblue;
-    justify-content:center;
-    padding:56px 64px;
+
+.all-cl {
+    background-color: cadetblue;
+    
+}
+.cl-head {
+    padding: 32px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    padding:0 24px 32px 24px;
 }
 
 .cl-block {
+    font-size:25px;
     flex-basis: 30%;
     margin: 16px;
     background-color: white;
+    cursor:pointer;
+    transition:0.5s;
+    border-radius:10px;
  
+}
+
+.cl-block:hover{
+    margin:-5px ;
+}
+
+.cl-block img{
+    width:100%;
+    border-radius:10px;
+}
+
+.cl-text{
+    line-height:50px;
+    margin:24px;
 }
 /*video*/
 
+.ex-head{
+    padding:32px;
+    text-align:center;
+    font-size:25px;
+}
 video{
     width:100%;
 }
@@ -187,5 +267,5 @@ footer{
     border-top:solid;
     margin-top:30px;
     display:flex;
-    flex-direction:row;
+    
 }
